@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#notifierApp {
+  background-color: #ccc;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+#notifierApp.active {
+  background-color: red;
+  animation: color-change 0.5s 20 alternate;
+}
+@keyframes color-change {
+  from { background-color: #ccc }
+  to { background-color: red }
+}
